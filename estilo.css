@@ -1,0 +1,398 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+}
+
+/* ENCABEZADO */
+.header{
+    background:#003366;
+    color:white;
+    padding:20px 0;
+}
+
+
+.contenedor-logo{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    background:white;
+}
+
+
+
+.texto-header h1{
+    margin:0;
+    font-size:50px;
+}
+
+.texto-header p{
+    font-size:22px;
+    font-style:italic;
+    margin-top:30px;
+}
+
+/* MENU */
+nav{
+    background:#0055aa;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul{
+    width:80%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 22px;
+    transition:0.3s;
+    font-size:20px;
+}
+
+nav ul li a:hover{
+    background:#003366;
+}
+
+/* MENUS DESPLEGABLES */
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:white;
+    min-width:250px;
+    z-index:1;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+    border-radius:0px 0px 10px 10px;
+}
+
+.dropdown-content a{
+    color:black;
+    padding:12px;
+    display:block;
+    text-decoration:none;
+}
+
+.dropdown-content a:hover{
+    background:#f2f2f2;
+}
+
+.dropdown-content .texto-menu{
+    color:black;
+    padding:15px;
+    font-size:15px;
+    line-height:1.5;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.inicio-principal{
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("imagenes/fondo_historia.jpg");
+
+    background-size: cover;
+   background-position: center 55%;
+    background-repeat: no-repeat;
+
+    margin:20px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.inicio-principal h2,
+.inicio-principal p,
+.inicio-principal ul,
+.inicio-principal li{
+    color:white;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.inicio-principal h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.historia{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* GALERIA */
+.galeria-inicio{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.galeria-inicio img{
+    width:320px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+    transition:1s;
+}
+
+.galeria-inicio img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTENIDO GENERAL */
+.contenido{
+    background:white;
+    margin:20px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.contenido h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.contenido p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.contenido img{
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* FACEBOOK */
+.facebook-link{
+    display:block;
+    background:#1877F2;
+    color:white !important;
+    text-align:center;
+    padding:12px;
+    margin:15px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.facebook-link:hover{
+    background:#0d5fd3;
+}
+
+/* DOCENTES */
+.contenedor-docentes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.tarjeta-docente{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.tarjeta-docente:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta-docente img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.tarjeta-docente h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.tarjeta-docente p{
+    color:#555;
+}
+
+/* CARRERAS */
+.contenedor-carreras{
+    padding:30px;
+}
+
+.tarjeta-carrera{
+    background:white;
+    margin-bottom:40px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-carrera h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.tarjeta-carrera p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.tarjeta-carrera img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin:10px;
+}
+
+/* BOTON VOLVER */
+.btn-volver{
+    display:inline-block;
+    margin:20px;
+    padding:12px 25px;
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-volver:hover{
+    background:#0055aa;
+    transform:scale(1.05);
+}
+
+/* BOTON SUBIR */
+#btn-arriba{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#003366;
+    color:white;
+    border:none;
+    padding:15px 20px;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+    z-index:999;
+}
+
+#btn-arriba:hover{
+    background:#0055aa;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .contenedor-logo{
+        width:95%;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .texto-header h1{
+        font-size:35px;
+    }
+
+    nav ul{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .galeria-inicio{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .galeria-inicio img{
+        width:90%;
+    }
+}
+
+
+
+.banner-area{
+    background:#003366;
+    color:white;
+    margin:20px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+
+.logo-area{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+}
+
+.texto-area{
+    text-align:center;
+    max-width:900px;
+}
+
+.texto-area h1{
+    font-size:70px;
+    margin:0;
+}
+
+.texto-area p{
+    font-size:22px;
+    font-style:italic;
+    line-height:1.5;
+}
+
+/* Mover texto de Misión y Visión hacia la izquierda */
+
+.texto-header{
+    text-align:center;
+    position:relative;
+    left:70px;
+}
+
+
+
+
+
+
+
